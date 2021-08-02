@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #44b564;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+/* utilities */
+
+.container {
+  padding: 50px 10%;
+}
+
+.danger {
+  color: #ff0000;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.section__heading {
+  font-size: 2em;
+  color: #333333;
+  font-weight: 700;
+}
+
+.description {
+  color: #777777;
+  margin: 10px 0;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.banner__button {
+  padding: 15px 20px;
+  border-radius: 35px;
+  background-color: #44b564;
+  outline: 0;
+  border: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner__button:hover {
+  background-color: #345f40;
+}
+
+.banner__button a {
+  color: #fff;
+  font-weight: 700;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* header css start */
+
+header {
+  background-image: url("../images/covid-right-half.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center left;
+  background-attachment: fixed;
+}
+
+/* navbar css start */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 15px 10%;
+  box-shadow: 0px 0px 44px -5px #6666661a;
+  font-size: 18px;
+}
+
+.logo {
+  list-style-type: none;
+}
+
+.logo li a {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.logo li a img {
+  height: 60px;
+  width: 60px;
+}
+
+.logo__name {
+  margin-left: 7px;
+}
+
+.brand__color {
+  color: #44b564;
+}
+
+.nav__items {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__items li {
+  margin-left: 20px;
+}
+
+.nav__items li:first-child {
+  margin-left: 0;
+}
+
+.nav__items li a {
+  color: #777777;
+  transition: color 0.8s ease-in-out;
+  font-weight: 600;
+}
+
+.nav__items li a:hover {
+  color: #44b564;
+}
+
+nav input,
+label {
+  display: none;
+}
+
+/* navbar css end */
+
+/* banner css start*/
+
+#banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+#banner h1 {
+  margin: 0 0 13px 0;
+}
+
+.banner__content {
+  display: flex;
+  align-items: center;
+}
+
+.banner__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__image img {
+  width: 90%;
+  margin: 0 auto;
+  object-fit: cover;
+}
