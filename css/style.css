@@ -55,7 +55,6 @@ textarea:focus {
 
 .description {
   color: #777777;
-  margin: 10px 0;
   font-size: 1.1em;
   text-align: justify;
 }
@@ -179,6 +178,10 @@ nav {
   margin: 0 0 13px 0;
 }
 
+#banner button {
+  margin-top: 15px;
+}
+
 .banner__content {
   display: flex;
   align-items: center;
@@ -194,4 +197,90 @@ nav {
   width: 90%;
   margin: 0 auto;
   object-fit: cover;
+}
+
+#situation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 70px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 2px #a3a1a1;
+  background-image: linear-gradient(
+      22.5deg,
+      rgba(242, 242, 242, 0.03) 0%,
+      rgba(242, 242, 242, 0.03) 16%,
+      rgba(81, 81, 81, 0.03) 16%,
+      rgba(81, 81, 81, 0.03) 26%,
+      rgba(99, 99, 99, 0.03) 26%,
+      rgba(99, 99, 99, 0.03) 73%,
+      rgba(43, 43, 43, 0.03) 73%,
+      rgba(43, 43, 43, 0.03) 84%,
+      rgba(213, 213, 213, 0.03) 84%,
+      rgba(213, 213, 213, 0.03) 85%,
+      rgba(125, 125, 125, 0.03) 85%,
+      rgba(125, 125, 125, 0.03) 100%
+    ),
+    linear-gradient(
+      22.5deg,
+      rgba(25, 25, 25, 0.03) 0%,
+      rgba(25, 25, 25, 0.03) 54%,
+      rgba(144, 144, 144, 0.03) 54%,
+      rgba(144, 144, 144, 0.03) 60%,
+      rgba(204, 204, 204, 0.03) 60%,
+      rgba(204, 204, 204, 0.03) 76%,
+      rgba(37, 37, 37, 0.03) 76%,
+      rgba(37, 37, 37, 0.03) 78%,
+      rgba(115, 115, 115, 0.03) 78%,
+      rgba(115, 115, 115, 0.03) 91%,
+      rgba(63, 63, 63, 0.03) 91%,
+      rgba(63, 63, 63, 0.03) 100%
+    ),
+    linear-gradient(
+      157.5deg,
+      rgba(71, 71, 71, 0.03) 0%,
+      rgba(71, 71, 71, 0.03) 6%,
+      rgba(75, 75, 75, 0.03) 6%,
+      rgba(75, 75, 75, 0.03) 15%,
+      rgba(131, 131, 131, 0.03) 15%,
+      rgba(131, 131, 131, 0.03) 18%,
+      rgba(110, 110, 110, 0.03) 18%,
+      rgba(110, 110, 110, 0.03) 37%,
+      rgba(215, 215, 215, 0.03) 37%,
+      rgba(215, 215, 215, 0.03) 62%,
+      rgba(5, 5, 5, 0.03) 62%,
+      rgba(5, 5, 5, 0.03) 100%
+    ),
+    linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+#situation p {
+  text-align: center;
+}
+
+.situation__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.situation__card h4 {
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.situation__card h3 {
+  color: #777777;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#situation .situation__card:nth-child(3) h3 {
+  color: #44b564;
+}
+
+#situation .situation__card:nth-child(4) h3 {
+  color: #ff0000;
 }
