@@ -1,6 +1,6 @@
 /* navbar responsive css start */
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 992px) {
   .menu__button {
     display: block;
   }
@@ -71,14 +71,14 @@
 
   /* font size responsive css end */
 }
-
+/* and (min-width: 688px)  */
 @media only screen and (max-width: 750px) {
   .banner__image img {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 592px) {
+@media only screen and (max-width: 688px) {
   #banner {
     grid-template-columns: repeat(1, 1fr);
   }
