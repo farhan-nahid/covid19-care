@@ -117,4 +117,8 @@
   .contact__image img {
     width: 90%;
   }
+
+  #situation {
+    grid-row-gap: 30px;
+  }
 }
