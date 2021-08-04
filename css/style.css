@@ -166,7 +166,8 @@ nav {
 /* banner css start*/
 
 #banner,
-.about {
+.about,
+.contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
@@ -321,12 +322,14 @@ nav {
 /* Resistance start */
 
 #resistance h1,
-#symptoms h1 {
+#symptoms h1,
+#contact__us h1 {
   text-align: center;
 }
 
 #resistance > p,
-#symptoms > p {
+#symptoms > p,
+#contact__us > p {
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -364,21 +367,50 @@ nav {
 
 /* Symptoms start */
 
-.symptoms__image {
-  margin-top: 80px;
+.symptoms__image,
+.contact__image {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.symptoms__image img {
+.symptoms__image img,
+.contact__image > img {
   width: 600px;
 }
 /* Symptoms end */
 
 /* contact us start */
 
-/* #contact__us {
-} */
+.contact {
+  margin-top: 50px;
+}
+
+.single__number {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.dr__name {
+  margin-left: 18px;
+}
+
+.dr__name h3 {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.dr__name p {
+  font-size: 15px;
+  color: var(--text-color);
+}
 
 /* contact us end */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
