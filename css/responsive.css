@@ -1,6 +1,22 @@
 /* navbar responsive css start */
 
 @media only screen and (max-width: 992px) {
+  #situation,
+  .resistance__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 70px;
+  }
+
+  .banner__image img,
+  .about__image img {
+    width: 100%;
+  }
+
+  .symptoms__image img,
+  .contact__image img {
+    width: 75%;
+  }
+
   .menu__button {
     display: block;
     position: fixed;

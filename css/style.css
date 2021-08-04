@@ -10,7 +10,7 @@
 
 *::selection {
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--white-color);
 }
 
 :root {
@@ -19,6 +19,7 @@
   --bold-color: #333333;
   --text-color: #777777;
   --danger-color: #ff0000;
+  --bg-color: #cac5c52e;
 }
 
 /* ==================
@@ -77,6 +78,7 @@ a {
   outline: 0;
   border: 0;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .banner__button:hover {
@@ -84,7 +86,7 @@ a {
 }
 
 .banner__button a {
-  color: #fff;
+  color: var(--white-color);
   font-weight: 700;
 }
 
@@ -149,7 +151,7 @@ nav {
 
 .menu__button {
   font-size: 20px;
-  color: #fff;
+  color: var(--white-color);
   padding: 3px 15px;
   display: none;
   background-color: var(--main-color);
@@ -338,26 +340,23 @@ nav {
 .resistance__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-column-gap: 15px;
   margin-top: 80px;
 }
 
 .resistance__card {
-  padding: 20px;
-  background-color: #cac5c52e;
+  padding: 0px 20px;
+  background-color: var(--bg-color);
   border-radius: 10px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
-/* .resistance__card img {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-} */
+.resistance__card img {
+  margin-top: -50px;
+}
 
 .resistance__card p {
   text-align: center;
@@ -409,7 +408,7 @@ nav {
 }
 
 .form__input {
-  background-color: #cac5c52e;
+  background-color: var(--bg-color);
   padding: 8px 15px;
   margin-bottom: 10px;
   border-radius: 10px;
