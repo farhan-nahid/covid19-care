@@ -399,12 +399,53 @@ nav {
 
 .dr__name h3 {
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--bold-color);
   font-weight: 700;
 }
 
 .dr__name p {
   font-size: 15px;
+  color: var(--text-color);
+}
+
+.form__input {
+  background-color: #cac5c52e;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.form__input i {
+  margin-right: 13px;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+input,
+textarea {
+  border: 0;
+  width: 100%;
+  background-color: #cac5c500;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
   color: var(--text-color);
 }
 

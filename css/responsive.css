@@ -18,7 +18,7 @@
     display: block;
     right: -35%;
     height: 100vh;
-    width: 30%;
+    width: 35%;
     text-align: center;
     transition: all 0.6s ease-in-out;
     background-image: repeating-linear-gradient(
@@ -82,15 +82,23 @@
   }
 }
 
+/* =====================
+   mobile device responsive 
+   ======================*/
+
 @media only screen and (max-width: 688px) {
   #banner,
   #situation,
-  .about {
+  .about,
+  .resistance__cards,
+  .contact {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .banner__image img,
-  .about__image img {
+  .about__image img,
+  .symptoms__image img,
+  .contact__image img {
     width: 90%;
   }
 }

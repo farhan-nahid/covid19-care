@@ -230,9 +230,37 @@
           </div>
           <div>
             <form action="">
-              <input type="text" name="" placeholder="name" id="" />
-              <input type="number" name="" placeholder="number" id="" />
-              <textarea placeholder="message" cols="30" rows="10"></textarea>
+              <div class="form__input">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="আপনার নাম"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form__input">
+                <i class="fas fa-phone"></i>
+                <input
+                  type="number"
+                  name="number"
+                  placeholder="আপনার মোবাইল নাম্বার"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form__input">
+                <i class="fas fa-envelope"></i>
+                <textarea
+                  name="message"
+                  placeholder="আপনাকে কিভাবে সাহায্য করতে পারি?"
+                  cols="30"
+                  rows="10"
+                  autocomplete="off"
+                ></textarea>
+              </div>
+              <button type="submit" class="banner__button">
+                <a href="">বার্তা পাঠিয়ে দিন</a>
+              </button>
             </form>
           </div>
         </div>
@@ -244,7 +272,14 @@
     <!-- footer start -->
     <footer class="container">
       <p class="description">&copy; ২০২১, ফারহান দ্বারা নির্মিত</p>
-      <p class="description">উপরে ফিরে যান</p>
+      <p>
+        <!-- <a
+          href="https://farhan-nahid.web.app/"
+          target="_blank"
+          class="description"
+          >উপরে ফিরে যান <i class="fas fa-arrow-up"></i
+        ></a> -->
+      </p>
     </footer>
     <!-- footer end -->
 
